@@ -1,0 +1,156 @@
+nav {
+    position: sticky;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #212529;
+    top: 0;
+    z-index: 20;
+}
+
+
+#faq {
+    margin-top: 2rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    width: 75rem;
+    margin-inline: auto;
+}
+
+.faq-container {
+    width: 100%;
+}
+
+.faq-header {
+    margin: auto;
+    margin-top: -0.2rem;
+}
+
+.faq-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ef233c;
+}
+
+.faq-header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+
+.faq-header span {
+    color: #ef233c;
+    font-weight: 600;
+    display: block;
+    font-size: smaller;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-header img {
+    width: 60%;
+    display: block;
+    object-fit: cover;
+}
+
+.faq-item {
+    padding-block: 1rem;
+    border: 1px solid #212529;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #212529;
+    width: 95%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.faq-item p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.faq-item h3 span {
+    float: right;
+    font-size: 2rem;
+    color: #ef233c;
+}
+
+
+@media (max-width:1024px) {
+    #faq {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .faq-item {
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .faq-header img {
+        width: 40%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .faq-header {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        margin-bottom: 2rem;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+
+    .faq-header p {
+        width: 70%;
+    }
+
+}
+
+@media (max-width:500px) {
+    .faq-item {
+        width: 100%;
+    }
+
+    .faq-header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .faq-header h1{
+        text-align: center;
+    }
+
+    .faq-header img {
+        display: block;
+        width: 90%;
+    }
+
+    .faq-header p {
+        width: 100%;
+    }
+
+    .faq-item h3{
+        font-size: 1rem;
+    }
+}

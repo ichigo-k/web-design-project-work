@@ -1,0 +1,183 @@
+nav {
+    position: sticky;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #212529;
+    top: 0;
+    z-index: 20;
+}
+
+#trainers {
+    padding: 2rem;
+    width: 100%;
+}
+
+#trainers h1 {
+    font-size: 2.5rem;
+    color: #ef233c;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+#trainers .sub_heading {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#trainers .trainers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.trainer-card img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+@keyframes teamAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(30px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.05) translateY(-10px);
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+.trainer-card {
+    width: 20%;
+    text-align: center;
+    box-shadow: inset;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.trainer-card h2 {
+    font-size: 1.5rem;
+    color: #ef233c;
+    margin-top: 1rem;
+    transition: all 1s ease;
+}
+
+.trainer-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 #ef233c;
+
+}
+
+.sub_heading p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+.trainer-card .social-links {
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.trainer-card .social-links a i {
+    width: 1rem;
+    height: 1rem;
+    display: inline;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: #ef233c;
+    transition: all 0.3s ease;
+}
+
+.trainer-card .social-links a i:hover {
+    color: #ffffff;
+    background-color: #ef233c;
+}
+
+@media screen and (max-width: 1024px) {
+    .trainer-card {
+        width: 30%;
+    }
+
+    #trainers h1 {
+        font-size: 2rem;
+    }
+
+    #trainers .sub_heading {
+        width: 70%;
+    }
+
+    .trainer-card img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .trainer-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .sub_heading p {
+        font-size: 1rem;
+    }
+
+
+    #trainers .trainers-container {
+        gap: 1rem;
+    }
+}
+
+@media (max-width:500px) {
+    .trainer-card {
+        width: 100%;
+        animation: appear ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0;
+    }
+
+    #trainers {
+        padding: 1rem;
+    }
+
+    #trainers h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #trainers .sub_heading {
+        width: 100%;
+    }
+
+
+    .trainer-card h2 {
+        font-size: 2rem;
+    }
+
+    .sub_heading p {
+        font-size: 1.5rem;
+    }
+
+
+
+}
