@@ -1,13 +1,13 @@
 const imageSlide = document.querySelector('#image-slide');
 
-const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+// const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
 
-let i = 0;
+// let i = 0;
 
-setInterval(() => {
-    imageSlide.src = `../images/${images[i]}`;
-    i = (i + 1) % images.length;
-}, 2000);
+// setInterval(() => {
+//     imageSlide.src = `../images/${images[i]}`;
+//     i = (i + 1) % images.length;
+// }, 2000);
 
 
 const menuBtn = document.getElementById('menu-btn');
